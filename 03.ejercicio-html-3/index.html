@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ejercicio HTML 3 Formulario</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formulario</h1>
+        </header>
+        <form action="formularios.html" method="GET">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <ul>
+                    <li>
+                        <label>
+                            Nombre
+                            <input
+                                type="text"
+                                placeholder="Nombre y Apellido"
+                                autofocus
+                            />
+                        </label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label>
+                            Correo
+                            <input
+                                type="text"
+                                placeholder="Escribe tu correo"
+                            />
+                        </label>
+                    </li>
+                </ul>
+                <label>
+                    Fecha
+                    <input type="date" required name="Fecha" />
+                </label>
+                <label>
+                    Hora
+                    <input type="time" required name="Hora" />
+                </label>
+                <ul>
+                    <li>
+                        <label>
+                            Contraseña
+                            <input
+                                type="text"
+                                placeholder="Debe contener entre 8 y 16 caracteres"
+                            />
+                        </label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label>
+                            Comentario
+                            <textarea
+                                name="Comentario"
+                                cols="40"
+                                rows="3"
+                            ></textarea>
+                        </label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label>
+                            Busqueda
+                            <textarea
+                                name="search"
+                                cols="40"
+                                rows="1"
+                                placeholder="search"
+                                disabled
+                            ></textarea>
+                        </label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label>
+                            Numero
+                            <input
+                                type="number"
+                                min="-10"
+                                max="10"
+                                placeholder="Debe contener entre 1 y 10 caracteres"
+                            />
+                        </label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label>
+                            Telefono format (34)456-789-012
+                            <input
+                                name="tel3"
+                                type="tel"
+                                pattern="[0-9]{4}"
+                                placeholder=""
+                                aria-label="4-digit number"
+                                size="14"
+                            />
+                            <!--  <input type="tel" id="tel" name="tel" /> -->
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <label>Colores Favoritos</label>
+                <select name="Colores">
+                    <optgroup label="Obscuros">
+                        <option value="Blue">Azul</option>
+                        <option value="Black">Negro</option>
+                        <option value="Brown">Marron</option>
+                        <option value="Grey">Gris</option>
+                        <option value="BlueOcean">Azul Oceano</option>
+                        <option value="Red">Rojo</option>
+                    </optgroup>
+                    <optgroup label="Claros">
+                        <option value="Whithe">Blanco</option>
+                        <option value="yellow">Amarillo</option>
+                        <option value="green">Verde</option>
+                        <option value="rose">Rosado</option>
+                        <option value="lightBlue">Azul cielo</option>
+                        <option value="orange">Naranja</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
+    </body>
+</html>
